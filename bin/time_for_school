@@ -11,7 +11,16 @@ steve.last_name = "Jobs"
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
+# all_u_need_to_know = Teacher::KNOWLEDGE.map{|each| each}
+puts "Hello, this is all that we have to cover #{Teacher::KNOWLEDGE.join(,)}, good luck!"
 
+jim = Student .new
+jim.first_name = "Jim"
+jim.last_name = "Choo"
+
+more_knowledge = avi.teach
+jim.learn(more_knowledge)
+puts "Jim just joined us and learned '#{jim.knowledge.last}' from Avi"
 
 some_knowledge = avi.teach 
 
